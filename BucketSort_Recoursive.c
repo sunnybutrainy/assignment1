@@ -133,17 +133,25 @@ void Recursive_BucketSort(int num[], int MaxCipher, int cipher, int reCount)
 
 int main(void)
 {
+	
 	int num[NUMCOUNT];
-	RandomInt(num);
+    RandomInt(num);
 
-	Recursive_BucketSort(num, MaxCipher(num), 1, 1);
+    clock_t start_time = clock();
+    Recursive_BucketSort(num, MaxCipher(num), 1, 1);
+    clock_t end_time = clock(); 
 
-	printf("\n\nSortArr = ");
-	for (int i = 0; i < NUMCOUNT; i++)
-	{
-		printf("%7d", num[i]);
-	}
-	printf("\n\n");
+    printf("\n\nSortArr = ");
+    for (int i = 0; i < NUMCOUNT; i++)
+    {
+        printf("%7d", num[i]);
+    }
+    printf("\n\n");
+    
+    double elapsed_time = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+    printf("Elapsed time: %.6f seconds\n", elapsed_time);
 
-	system("pause");
+
+    system("pause");
+    return 0;
 }
