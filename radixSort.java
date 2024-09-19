@@ -30,7 +30,7 @@ public class radixSort {
 
     // Radix sort function
     public static void radixSort(int[] arr, int exp) {
-        // Base case: if exp is greater than 1000, return
+
         if (exp > 1000) {
             return;
         }
