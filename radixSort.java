@@ -3,7 +3,7 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Arrays;
+import java.text.DecimalFormat;
 
 
 public class radixSort {
@@ -76,10 +76,12 @@ public class radixSort {
     }
 
     // writing input as a txt file. Path can be adjusted accordingly.
-    public static void writeOutput(String filename, long duration) {
+    public static void writeOutput(String filename, double duration) {
         String filePath = "./" + filename;
+        DecimalFormat df = new DecimalFormat("#");
+        df.setMaximumFractionDigits(6); // C only outputs to 6 decimal places
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
-            writer.append(duration + "\n");
+            writer.append(df.format(duration) + "\n");
             writer.close();
 
         } catch (IOException e) {
@@ -95,7 +97,7 @@ public class radixSort {
 
 
         // calling the timeCalc process 
-        long duration = timeCalc(numbers);
+        double duration = (double)timeCalc(numbers)/1000000000.0;
 
         // Output to a txt file "radJava.txt"
         writeOutput("java_output.txt", duration);

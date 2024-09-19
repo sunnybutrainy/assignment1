@@ -39,5 +39,5 @@ with open('scramble.txt', 'r') as file:
 start_time = time.time()
 radixSort(test_arr)
 end_time = time.time()
-runtime = end_time - start_time
+runtime = round(end_time - start_time, 6) # 6 decimal places to match C
 recordResults(runtime)
