@@ -54,7 +54,7 @@ public class radixSort {
     // Read integers from a txt file. Path can be adjusted accordingly.
     
     private static int[] readInput(String filename) {
-        String filePath = "/Users/e.g./eclipse-workspace/comp359/src/comp359/" + filename;
+        String filePath = "./" + filename;
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
             StringBuilder sb = new StringBuilder();
@@ -76,13 +76,11 @@ public class radixSort {
     }
 
     // writing input as a txt file. Path can be adjusted accordingly.
-    public static void writeOutput(String filename, int[] arr, long duration) {
-        String filePath = "/Users/e.g./eclipse-workspace/comp359/src/comp359/" + filename;
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
-            for (int number : arr) {
-                writer.write(number + " ");
-            }
-            writer.write("\nrad sorting took: " + duration + " nanoseconds");
+    public static void writeOutput(String filename, long duration) {
+        String filePath = "./" + filename;
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
+            writer.append(duration + "\n");
+            writer.close();
 
         } catch (IOException e) {
             System.err.println("error writing to the file " + e.getMessage());
@@ -100,7 +98,7 @@ public class radixSort {
         long duration = timeCalc(numbers);
 
         // Output to a txt file "radJava.txt"
-        writeOutput("radJava.txt", numbers, duration);
+        writeOutput("java_output.txt", duration);
         
 
         // Can uncomment to show values in compiler
