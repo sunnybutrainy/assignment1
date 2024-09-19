@@ -1,3 +1,4 @@
+import time
 def countSort(arr, exp):
     n = len(arr)
     output = [0] * n
@@ -24,3 +25,19 @@ def radixSort(arr, exp=1):
     
     countSort(arr, exp)
     radixSort(arr, exp * 10)
+
+def recordResults(runtime):
+    with open('py_results.txt', 'a') as file:
+        file.write(f"{runtime}\n")
+
+test_arr = []
+with open('scramble.txt', 'r') as file:
+    for line in file:
+        test_arr.append(int(line.strip()))
+
+
+start_time = time.time()
+radixSort(test_arr)
+end_time = time.time()
+runtime = end_time - start_time
+recordResults(runtime)
