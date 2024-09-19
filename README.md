@@ -1,6 +1,6 @@
 Eleandro Girgis - implementation of radix sort in java
 
-Jakob Pak - implementation of radix sort in python
+Jakob Upton - implementation of radix sort in python
 
 Sun Pak - implementation of radix sort in C
 
