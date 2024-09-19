@@ -42,7 +42,7 @@ public class radixSort {
     }
 
     // returning time in nanoseconds 
-    private static long timeSorting(int[] arr) {
+    private static long timeCalc(int[] arr) {
         long startTime = System.nanoTime();
         long endTime = System.nanoTime();
         return endTime - startTime; 
@@ -53,7 +53,7 @@ public class radixSort {
     	
         int[] numbers = {85, 03, 55, 34, 67, 21, 93, 899};
         radixSort(numbers, 3);
-        long duration = timeSorting(numbers);
+        long duration = timeCalc(numbers);
         System.out.println("Sorted array: " + Arrays.toString(numbers));
         System.out.println("Sorting took: " + duration + " nanoseconds");
 
