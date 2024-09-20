@@ -1,6 +1,7 @@
 from subprocess import call
 from testing import *
 from radixSort import *
+from calculate_stat import *
 
 for i in range(0, 100):
     # Generate data
@@ -11,3 +12,5 @@ for i in range(0, 100):
     call(["java", "radixSort.java"])
     # Execute the python
     sortFile()
+
+generateStats()

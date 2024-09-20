@@ -101,7 +101,7 @@ public class radixSort {
         double duration = (double)timeCalc(numbers)/1000000000.0;
 
         // Output to a txt file "radJava.txt"
-        writeOutput("java_output.txt", duration);
+        writeOutput("java_results.txt", duration);
         
 
         // Can uncomment to show values in compiler
