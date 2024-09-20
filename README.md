@@ -22,3 +22,5 @@ Simplilearn. (2023, March 8). Radix sort: How radix sort algorithm works in data
 
 
 Educative. (n.d.). Comparison of linear-time sorting algorithms. Educative. Retrieved September 17, 2024, from https://www.educative.io/answers/comparison-of-linear-time-sorting-algorithms
+
+Design Algorithm  Follow, A. (2023, April 2). What are some applications and examples of using radix sort in real-world problems?. Radix Sort: Applications and Examples in Real-World Problems. https://www.linkedin.com/advice/3/what-some-applications-examples-using-radix-sort#:~:text=One%20common%20use%20case%20for,codes%2C%20prefixes%2C%20and%20suffixes. 
