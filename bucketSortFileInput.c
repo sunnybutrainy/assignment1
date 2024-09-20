@@ -112,7 +112,6 @@ void Recursive_BucketSort(int num[], int MaxCipher, int cipher, int reCount)
 			last[idx] = newNode;
 		}
 	}
-	printf("\n<Sort_Complete>\n");
 
 	int numIDX = 0;
 	//insert into array
@@ -131,13 +130,6 @@ void Recursive_BucketSort(int num[], int MaxCipher, int cipher, int reCount)
 				first[i] = first[i]->next;
 		} while (1);
 	}
-
-	printf("\n\nreCount %d = ", reCount);
-	for (int i = 0; i < NUMCOUNT; i++)
-	{
-		printf("%7d", num[i]);
-	}
-	printf("\n\n");
 
 	cipher *= 10;
 	Recursive_BucketSort(num, MaxCipher, cipher, ++reCount);

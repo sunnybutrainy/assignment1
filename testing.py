@@ -7,5 +7,3 @@ def generate_scrambled_numbers(filename):
     with open(filename, 'w') as file:
         for number in numbers:
             file.write(f"{number}\n")
-
-generate_scrambled_numbers('scramble.txt')

@@ -30,14 +30,15 @@ def recordResults(runtime):
     with open('py_results.txt', 'a') as file:
         file.write(f"{runtime}\n")
 
-test_arr = []
-with open('scramble.txt', 'r') as file:
-    for line in file:
-        test_arr.append(int(line.strip()))
 
+def sortFile():
+    test_arr = []
+    with open('scramble.txt', 'r') as file:
+        for line in file:
+            test_arr.append(int(line.strip()))
 
-start_time = time.time()
-radixSort(test_arr)
-end_time = time.time()
-runtime = round(end_time - start_time, 6) # 6 decimal places to match C
-recordResults(runtime)
+    start_time = time.time()
+    radixSort(test_arr)
+    end_time = time.time()
+    runtime = round(end_time - start_time, 6) # 6 decimal places to match C
+    recordResults(runtime)
