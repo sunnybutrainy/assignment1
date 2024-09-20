@@ -1,12 +1,25 @@
-Eleandro Girgis - implementation of radix sort in java
+<h1>Radix Sort in Java, C, and Python</h1>
 
-Jakob Upton - implementation of radix sort in python
+<strong>Eleandro Girgis</strong> - implementation of radix sort in
+java
 
-Sun Pak - implementation of radix sort in C, Analysis
+<strong>Jakob Upton</strong> - implementation of radix sort in python
 
-Citation and Github Repo: 
+<strong>Sun Pak</strong> - implementation of radix sort in C, Analysis
 
-Git hub: https://github.com/sunnybutrainy/assignment1/tree/master 
+<h2>Instructions for Running</h2>
+
+Compile the C file with
+<code>gcc bucketSortFileInput.c -o bucketsort</code>
+followed by running
+<code>python collectResults.py</code>.
+The program will print out the average run times given 100 samples across the same data.
+
+
+
+<h2>Citations and Link to Repo</h2>
+
+Github: https://github.com/sunnybutrainy/assignment1/tree/master 
 
 GeeksforGeeks. (2013, September 2). Radix Sort. GeeksforGeeks. https://www.geeksforgeeks.org/radix-sort/
 
