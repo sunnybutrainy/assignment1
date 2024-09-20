@@ -4,7 +4,9 @@ Jakob Upton - implementation of radix sort in python
 
 Sun Pak - implementation of radix sort in C, Analysis
 
-Citation: 
+Citation and Github Repo: 
+
+Git hub: https://github.com/sunnybutrainy/assignment1/tree/master 
 
 GeeksforGeeks. (2013, September 2). Radix Sort. GeeksforGeeks. https://www.geeksforgeeks.org/radix-sort/
 
