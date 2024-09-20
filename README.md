@@ -3,7 +3,7 @@
 <strong>Eleandro Girgis</strong> - implementation of radix sort in
 java
 
-<strong>Jakob Upton</strong> - implementation of radix sort in python
+<strong>Jakob Upton</strong> - implementation of radix sort in python, foundation for comparing runtimes
 
 <strong>Sun Pak</strong> - implementation of radix sort in C, Analysis
 
