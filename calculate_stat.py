@@ -24,4 +24,4 @@ def generateStats():
     average_py = round(py_total / len(py_results), 6)
     print(f"Java Average: {average_java}")
     print(f"C Average: {average_c}")
-    print(f"Python Average: {average_c}")
+    print(f"Python Average: {average_py}")
